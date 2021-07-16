@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newspaper</title>
+    <link rel="stylesheet" href="Newspaper.css" type="text/css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>HaiNews</header>
+    </nav>
+    <div id="main">
+        <div id="con-dat">
+        <h2><u>India</u></h2>
+        <p id="date"></p>
+        </div>
+    <div id="content">
+        <div id="div1">
+            <h1>Heavy Downpour, Strong Winds In Delhi Bring Respite From Heat</h1>
+            <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AAKWU5h.img?h=959&w=1438&m=6&q=60&o=f&l=f" alt="delhi rain image">
+            <p>“Thunderstorms with light to moderate intensity rain with wind speed of 20-40 Km/h would occur over isolated places of North-Delhi, South-west Delhi, Gohana, Gannaur, Jhajjar, Sonipat, Kharkhoda, Matanhail and adjoining areas (Haryana) during next 2 hours (sic),” it said.
+
+                In another tweet, it said: “Thunderstorm with light to moderate intensity rain with wind speed of 20-40 Km/h would occur over isolated places of South-Delhi, East-Delhi, Nuh, Tizara, Rewari, Faridabad (Haryana), Noida, Greater-Noida, Indirapuram (U.P.) and adjoining areas during next 2 hours (sic).”
+                
+                The weather body on Saturday said the monsoon is unlikely to progress to Delhi, Chandigarh, Haryana, remaining parts of Rajasthan, west Uttar Pradesh, and Punjab for nearly two weeks and is also likely to enter a “break spell” from June 29 onwards. Heavy rain will be confined to northeast India while rainfall will be subdued in the rest of the country at least till around July 5, it added.
+                
+                Read all the Latest News, Breaking News and Coronavirus News here</p>
+        </div>
+    </div>
+    </div>
+    <script>
+        var today = new Date();
+        var dd = today.getDate();
+        
+        var mm = today.getMonth()+1; 
+        var yyyy = today.getFullYear();
+        if(dd<10) 
+        {
+            dd='0'+dd;
+        } 
+        
+        if(mm<10) 
+        {
+            mm='0'+mm;
+        } 
+        today = mm+'-'+dd+'-'+yyyy;
+        console.log(today);
+        document.getElementById("date").innerHTML=today;</script>
+</body>
+</html>
